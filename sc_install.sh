@@ -68,8 +68,8 @@ function start_menu(){
     clear
     red " 【宝宝专用】SillyTavern + Clewd 一键安装脚本" 
 	green " FROM: https://github.com/BlueSkyXN/SKY-BOX "
-    green " USE:  wget -O SCbox.sh https://raw.githubusercontent.com/chs200542053/sc_install/main/sc_install.sh && chmod +x sc_install.sh && clear && ./sc_install.sh "
-    blue " ========================交流方式：======================"
+    green " USE:  wget -O sc_install.sh https://raw.githubusercontent.com/chs200542053/sc_install/main/sc_install.sh && chmod +x sc_install.sh && clear && ./sc_install.sh "
+    blue " ========================【交流方式】======================"
     green " Claude牛排冒菜馆(萌新互助群1)：910524479" 
     green " Claude水秋海洋馆(萌新互助群2)：304690608" 
     green " Claude2.0先行破限组(大群)：704819371" 
@@ -83,7 +83,7 @@ function start_menu(){
     green " 5. 运行 clewd"
     yellow " ========================【更新】========================"
     green " 6. 更新 clewd"
-    yellow " ========================================================"
+    green " ========================================================"
     blue " 0. 退出脚本"
     echo
     read -p "请输入数字:" menuNumberInput
