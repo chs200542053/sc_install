@@ -119,23 +119,25 @@ function start_menu(){
     case "$menuNumberInput" in
         1 )
            install_env
-	;;
+		;;
         2 )
            install_silly
-	;;
+		;;
         3 )
            install_clewd
-	;;
+		;;
         4 )
            run_silly
-	;;
+		;;
         5 )
            run_clewd
-	;;
+		;;
 	6 )
            run_clewd_update
+		;;
 	8 )
            run_swap
+		;;
 	9 )
            run_bbrfq
         ;;
