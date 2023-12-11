@@ -73,19 +73,19 @@ run_clewd_update(){
 
 # 8、安装/卸载虚拟内存
 run_swap(){
-	blue "酒馆安装1024mb足够"
-	wget -O "/root/swap.sh" "https://raw.githubusercontent.com/BlueSkyXN/ChangeSource/master/swap.sh" --no-check-certificate -T 30 -t 5 -d
-	chmod +x "/root/swap.sh"
-	chmod 777 "/root/swap.sh"
+  blue "酒馆安装1024mb足够"
+  wget -O "/root/swap.sh" "https://raw.githubusercontent.com/BlueSkyXN/ChangeSource/master/swap.sh" --no-check-certificate -T 30 -t 5 -d
+  chmod +x "/root/swap.sh"
+  chmod 777 "/root/swap.sh"
 }
 
 # 9、启动BBR FQ算法
 run_bbrfq(){
 remove_bbr_lotserver
-	echo "net.core.default_qdisc=fq" >> /etc/sysctl.d/99-sysctl.conf
-	echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.d/99-sysctl.conf
-	sysctl --system
-	echo -e "BBR+FQ修改成功，重启生效！"
+  echo "net.core.default_qdisc=fq" >> /etc/sysctl.d/99-sysctl.conf
+  echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.d/99-sysctl.conf
+  sysctl --system
+  echo -e "BBR+FQ修改成功，重启生效！"
 }
 
 #主菜单
@@ -111,7 +111,7 @@ function start_menu(){
 	green " 7. 更新 SillyTavern(尚未完工勿选)"
 	yellow " ========================【优化】========================"
 	green " 8. 安装/卸载虚拟内存（酒馆安装1024mb足够）"
-	green " 9. 启动BBR FQ算法（网络加速）
+	green " 9. 启动BBR FQ算法（网络加速）"
     yellow " ========================================================"
     blue " 0. 退出脚本"
     echo
@@ -132,13 +132,16 @@ function start_menu(){
         5 )
            run_clewd
 		;;
-	6 )
+		6 )
            run_clewd_update
 		;;
-	8 )
+		6 )
+           run_clewd_update
+		;;
+		8 )
            run_swap
 		;;
-	9 )
+		9 )
            run_bbrfq
         ;;
         0 )
