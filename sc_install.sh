@@ -77,6 +77,9 @@ run_swap(){
   wget -O "/root/swap.sh" "https://raw.githubusercontent.com/BlueSkyXN/ChangeSource/master/swap.sh" --no-check-certificate -T 30 -t 5 -d
   chmod +x "/root/swap.sh"
   chmod 777 "/root/swap.sh"
+  blue "下载完成"
+  blue "你也可以输入 bash /root/swap.sh 来手动运行"
+  bash "/root/swap.sh"
 }
 
 # 9、启动BBR FQ算法
